@@ -1,3 +1,36 @@
+<p align="center">
+  <img src="assets/unijui-logo.png" alt="Logo da UNIJUÍ" width="200">
+</p>
+
+<p align="center">
+  <strong>UNIJUÍ — Universidade Regional do Noroeste do Estado do Rio Grande do Sul</strong><br>
+  <strong>Curso de Ciência da Computação</strong>
+</p>
+
+<h1 align="center">Projeto e Implementação de uma Linguagem de Programação Temática</h1>
+
+<p align="center">
+  <strong>Trabalho Prático 1 — SarnaLang 1.0</strong><br>
+  Relatório Técnico de Especificação
+</p>
+
+<p align="center">
+  <strong>Integrantes</strong><br>
+  Diego Meinerz<br>
+  Fernanda Wammes<br>
+  Elias Girardi Miranda<br>
+  Matheus Marcelino Burin
+</p>
+
+<p align="center">
+  <strong>Disciplina:</strong> Linguagens Formais e Compiladores<br>
+  <strong>Professor:</strong> Marcos Ronaldo Melo Cavalheiro
+</p>
+
+<p align="center">2026</p>
+
+---
+
 # Relatório Técnico de Especificação — SarnaLang 1.0
 
 ## 1. Tema
