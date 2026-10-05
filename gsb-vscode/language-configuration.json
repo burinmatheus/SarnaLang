@@ -1,0 +1,39 @@
+{
+  "comments": {
+    "lineComment": "BAH:"
+  },
+  "brackets": [
+    [
+      "(",
+      ")"
+    ]
+  ],
+  "autoClosingPairs": [
+    {
+      "open": "(",
+      "close": ")"
+    },
+    {
+      "open": "\"",
+      "close": "\"",
+      "notIn": [
+        "string",
+        "comment"
+      ]
+    }
+  ],
+  "surroundingPairs": [
+    [
+      "(",
+      ")"
+    ],
+    [
+      "\"",
+      "\""
+    ]
+  ],
+  "indentationRules": {
+    "increaseIndentPattern": "^\\s*[Aa][Bb][Rr][Ee]\\s+[Oo]\\s+[Pp][Oo][Rr][Tt][AÃaã][Oo]\\s*$",
+    "decreaseIndentPattern": "^\\s*[Ff][Ee][Cc][Hh][Aa]\\s+[Oo]\\s+[Pp][Oo][Rr][Tt][AÃaã][Oo]"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name": "gsb-language-support",
+  "displayName": "SarnaLang Language Support",
+  "description": "SarnaLang 1.0: realce, snippets e diagnósticos do próprio transpilador Python.",
+  "version": "0.2.0",
+  "publisher": "gsb-language",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Linters",
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onLanguage:gsb"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "gsb",
+        "aliases": [
+          "SarnaLang",
+          "GSB"
+        ],
+        "extensions": [
+          ".sarna"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "gsb",
+        "scopeName": "source.gsb",
+        "path": "./syntaxes/gsb.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "gsb",
+        "path": "./snippets.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "gsb.validateCurrentFile",
+        "title": "SarnaLang: Validar arquivo atual"
+      }
+    ],
+    "configuration": {
+      "title": "SarnaLang",
+      "properties": {
+        "sarna.pythonPath": {
+          "type": "string",
+          "default": "python3",
+          "restricted": true,
+          "description": "Executável Python 3.10+. No Windows, configure python ou o caminho completo do executável."
+        },
+        "sarna.compilerDirectory": {
+          "type": "string",
+          "default": "",
+          "restricted": true,
+          "description": "Opcional: diretório contendo o pacote sarnalang. Vazio usa o projeto em desenvolvimento ou o analisador incluído no VSIX."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "node --check extension.js && node --check compiler-client.js",
+    "test": "node --test tests/*.test.js",
+    "vscode:prepublish": "node scripts/prepare-server.js",
+    "package": "npx @vscode/vsce package",
+    "pretest": "node scripts/prepare-server.js"
+  },
+  "license": "MIT",
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false,
+      "description": "A validação executa o analisador Python local."
+    }
+  }
+}

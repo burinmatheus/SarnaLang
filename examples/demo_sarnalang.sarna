@@ -1,0 +1,32 @@
+E AÍ MARCELO, É O QUÊ?
+
+BAH: SarnaLang - exemplo temático
+
+PORTÃOZÃO numero_portao = 12;
+CASONA tamanho_casa = 3.5;
+NENEZINHO apelido = "Marcelo";
+GRAXA VÉIA graxa_veia = SHOW;
+
+MAS TU É SARNA NÉ? (
+    numero_portao > 10 E MAIS graxa_veia == SHOW
+)
+ABRE O PORTÃO
+    E AÍ MARCELO, MOSTRA AÍ(
+        "Mas tu é sarna né,", apelido,
+        "- o portãozão é", numero_portao
+    );
+FECHA O PORTÃO
+NÃO É SARNA NÃO
+ABRE O PORTÃO
+    E AÍ MARCELO, MOSTRA AÍ("Não é sarna não.");
+FECHA O PORTÃO
+
+DE NOVO MARCELO (numero_portao > 9)
+ABRE O PORTÃO
+    E AÍ MARCELO, MOSTRA AÍ("Portãozão:", numero_portao);
+    numero_portao = numero_portao - 1;
+FECHA O PORTÃO
+
+E AÍ MARCELO, MOSTRA AÍ("SHOW DE BOLA!");
+
+SHOW DE BOLA, VALEU!

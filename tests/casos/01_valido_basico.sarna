@@ -1,0 +1,11 @@
+E AÍ MARCELO, É O QUÊ?
+
+PORTÃOZÃO portao = 10;
+CASONA tamanho_casona = 2.5;
+
+portao = portao + 5;
+
+E AÍ MARCELO, MOSTRA AÍ("Portão:", portao);
+E AÍ MARCELO, MOSTRA AÍ("Casona:", tamanho_casona);
+
+SHOW DE BOLA, VALEU!

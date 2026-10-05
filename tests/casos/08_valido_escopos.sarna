@@ -1,0 +1,22 @@
+E AÍ MARCELO, É O QUÊ?
+
+PORTÃOZÃO x = 5;
+NENEZINHO nome = "externo";
+
+MAS TU É SARNA NÉ? (SHOW)
+ABRE O PORTÃO
+    PORTÃOZÃO x = x + 1;
+    NENEZINHO nome = nome;
+    nome = nome;
+    E AÍ MARCELO, MOSTRA AÍ(x, nome);
+    ME DIZ AÍ(x);
+    E AÍ MARCELO, MOSTRA AÍ(x);
+    MAS TU É SARNA NÉ? (SHOW)
+    ABRE O PORTÃO
+        GRAXA VÉIA nome = nome == "externo";
+        E AÍ MARCELO, MOSTRA AÍ(nome);
+    FECHA O PORTÃO
+FECHA O PORTÃO
+
+E AÍ MARCELO, MOSTRA AÍ(x, nome);
+SHOW DE BOLA, VALEU!

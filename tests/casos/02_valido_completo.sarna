@@ -1,0 +1,32 @@
+E AÍ MARCELO, É O QUÊ?
+
+BAH: caso completo exigido pelo trabalho
+
+PORTÃOZÃO repeticoes = 3;
+CASONA carga = 10.5;
+PORTÃOZÃO precedencia = 2 + 3 * 4;
+NENEZINHO nome = "";
+GRAXA VÉIA autorizado = SHOW;
+
+E AÍ MARCELO, MOSTRA AÍ("Qual teu nome?");
+ME DIZ AÍ(nome);
+
+DE NOVO MARCELO (repeticoes > 0)
+ABRE O PORTÃO
+    E AÍ MARCELO, MOSTRA AÍ("Repetição:", repeticoes);
+    carga = carga + 2 * 1.5;
+    repeticoes = repeticoes - 1;
+FECHA O PORTÃO
+
+MAS TU É SARNA NÉ? (carga >= 15 E MAIS autorizado == SHOW)
+ABRE O PORTÃO
+    E AÍ MARCELO, MOSTRA AÍ("Show de bola,", nome);
+FECHA O PORTÃO
+NÃO É SARNA NÃO
+ABRE O PORTÃO
+    E AÍ MARCELO, MOSTRA AÍ("Ainda falta carga.");
+FECHA O PORTÃO
+
+E AÍ MARCELO, MOSTRA AÍ("2 + 3 * 4 =", precedencia);
+
+SHOW DE BOLA, VALEU!

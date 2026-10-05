@@ -1,0 +1,150 @@
+{
+  "Programa SarnaLang": {
+    "prefix": [
+      "programa",
+      "sarna",
+      "gsb"
+    ],
+    "body": [
+      "E AÍ MARCELO, É O QUÊ?",
+      "",
+      "$0",
+      "",
+      "SHOW DE BOLA, VALEU!"
+    ],
+    "description": "Programa completo SarnaLang 1.0"
+  },
+  "MAS TU É SARNA NÉ?": {
+    "prefix": [
+      "if",
+      "condicional"
+    ],
+    "body": [
+      "MAS TU É SARNA NÉ? (${1:SHOW})",
+      "ABRE O PORTÃO",
+      "\t$0",
+      "FECHA O PORTÃO"
+    ],
+    "description": "Condicional com condição lógica"
+  },
+  "Condicional com alternativa": {
+    "prefix": [
+      "ifelse",
+      "sarnaelse"
+    ],
+    "body": [
+      "MAS TU É SARNA NÉ? (${1:SHOW})",
+      "ABRE O PORTÃO",
+      "\t${2:BAH: quando verdadeiro}",
+      "FECHA O PORTÃO",
+      "NÃO É SARNA NÃO",
+      "ABRE O PORTÃO",
+      "\t$0",
+      "FECHA O PORTÃO"
+    ],
+    "description": "Condicional com dois blocos explícitos"
+  },
+  "DE NOVO MARCELO": {
+    "prefix": [
+      "while",
+      "denovo"
+    ],
+    "body": [
+      "DE NOVO MARCELO (${1:NÃO SHOW})",
+      "ABRE O PORTÃO",
+      "\t$0",
+      "FECHA O PORTÃO"
+    ],
+    "description": "Repetição controlada por expressão lógica"
+  },
+  "E AÍ MARCELO, MOSTRA AÍ": {
+    "prefix": [
+      "print",
+      "mostra"
+    ],
+    "body": [
+      "E AÍ MARCELO, MOSTRA AÍ(${1:\"mensagem\"});"
+    ],
+    "description": "Saída de expressões separadas por vírgula"
+  },
+  "ME DIZ AÍ": {
+    "prefix": [
+      "input",
+      "mediz"
+    ],
+    "body": [
+      "ME DIZ AÍ(${1:variavel});"
+    ],
+    "description": "Entrada em uma variável já declarada"
+  },
+  "PORTÃOZÃO": {
+    "prefix": [
+      "int",
+      "portaozao"
+    ],
+    "body": [
+      "PORTÃOZÃO ${1:nome} = ${2:0};"
+    ],
+    "description": "Declara inteiro"
+  },
+  "CASONA": {
+    "prefix": [
+      "float",
+      "casona"
+    ],
+    "body": [
+      "CASONA ${1:nome} = ${2:0.0};"
+    ],
+    "description": "Declara real"
+  },
+  "NENEZINHO": {
+    "prefix": [
+      "string",
+      "nenezinho"
+    ],
+    "body": [
+      "NENEZINHO ${1:nome} = \"${2}\";"
+    ],
+    "description": "Declara texto"
+  },
+  "GRAXA VÉIA": {
+    "prefix": [
+      "bool",
+      "graxa"
+    ],
+    "body": [
+      "GRAXA VÉIA ${1:nome} = ${2:SHOW};"
+    ],
+    "description": "Declara lógico"
+  },
+  "Expressão E MAIS": {
+    "prefix": [
+      "and",
+      "emais"
+    ],
+    "body": [
+      "${1:SHOW} E MAIS ${2:SHOW}"
+    ],
+    "description": "Conjunção de duas expressões lógicas"
+  },
+  "Expressão OU O QUÊ?": {
+    "prefix": [
+      "or",
+      "ouoque"
+    ],
+    "body": [
+      "${1:NÃO SHOW} OU O QUÊ? ${2:SHOW}"
+    ],
+    "description": "Disjunção de duas expressões lógicas"
+  },
+  "Expressão NEM A PAU": {
+    "prefix": [
+      "not",
+      "nemapau"
+    ],
+    "body": [
+      "NEM A PAU (${1:SHOW})"
+    ],
+    "description": "Negação de expressão lógica"
+  }
+}
