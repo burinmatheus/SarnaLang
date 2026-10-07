@@ -62,7 +62,21 @@ configuração, separado dos erros da linguagem.
 6. Digite `programa`, `ifelse`, `while`, `mostra`, `mediz` ou `portaozao` para snippets.
 
 O comando **SarnaLang: Validar arquivo atual** solicita nova validação.
-Para compilar e executar o programa, use os comandos do [README do projeto](../README.md).
+
+## Compilar e executar com o projeto completo
+
+Com o código-fonte completo do trabalho, execute a partir da raiz do projeto
+(a pasta que contém `main.py`):
+
+```bash
+python3 main.py tests/casos/02_valido_completo.sarna -o generated/02_valido_completo.c
+gcc generated/02_valido_completo.c -o programa
+./programa
+```
+
+No Windows, substitua `python3` por `python` ou `py -3`, compile com
+`-o programa.exe` e execute `.\programa.exe`. GCC/Clang é necessário para
+compilar o C. A extensão oferece suporte de edição e validação.
 
 ## Testes automatizados
 
@@ -88,6 +102,13 @@ npm run package
 ```
 
 O comando usa `@vscode/vsce` via `npx`; no primeiro uso, pode precisar baixá-lo.
+Se `vsce` já estiver instalado e o `npx` falhar por falta de acesso à rede,
+use diretamente `vsce package --allow-missing-repository` nesta pasta.
+
+O pacote local usa `--allow-missing-repository`, pois o projeto ainda não informa
+um repositório público. O README da extensão contém as instruções necessárias
+sem depender de links para arquivos fora do VSIX.
+
 O hook `vscode:prepublish` copia os arquivos `.py` de `../sarnalang` para
 `server/sarnalang`. Essa pasta é gerada: edite o analisador na raiz e prepare
 novamente o pacote. Instale o VSIX pelo menu **Extensions → … → Install from VSIX…**.

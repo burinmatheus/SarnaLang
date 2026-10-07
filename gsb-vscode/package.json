@@ -71,7 +71,7 @@
     "lint": "node --check extension.js && node --check compiler-client.js",
     "test": "node --test tests/*.test.js",
     "vscode:prepublish": "node scripts/prepare-server.js",
-    "package": "npx @vscode/vsce package",
+    "package": "npx @vscode/vsce package --allow-missing-repository",
     "pretest": "node scripts/prepare-server.js"
   },
   "license": "MIT",
